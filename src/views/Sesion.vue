@@ -7,7 +7,7 @@
         b-col.curso(col-sm="10") 
       b-row.subtitulo
         b-col 
-          strong $route.params.id
+          strong Matematica
       b-row 
       br
       r-navS.subtitulo
