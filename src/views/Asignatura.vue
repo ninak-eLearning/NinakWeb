@@ -7,14 +7,13 @@
         b-col.curso(col-sm="10") 
       b-row.subtitulo
         b-col 
-          strong $route.params.id
+          strong {{$route.params.id}}
       b-row 
       br
       b-row(align-v="center")
-       r-card.subtitulo(
-         v-for="encabezadoS in nombreSesion"
-          :key="encabezadoS.id"
-          :name="encabezadoS.nombreS")
+       router-link( :to= "{ name: 'Sesion' , params: {id:encabezadoS.nombreS}}" v-for="encabezadoS of nombreSesion" :key="encabezadoS.id") 
+         r-card.subtitulo( :key="encabezadoS.id" :name="encabezadoS.nombreS") 
+
 </template>
 
 <script>

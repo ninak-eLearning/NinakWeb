@@ -11,15 +11,13 @@
     b-row 
     br
     b-row(align-v="center")
-      r-card.subtitulo(
-        v-for="encabezado in nombreAsignatura"
-        :key="encabezado.id"
-        :name="encabezado.nombreCurso")
-      
+     router-link( :to= "{ name: 'Asignatura' , params: {id:encabezado.nombreCurso}}" v-for="encabezado of nombreAsignatura" :key="encabezado.id") 
+      r-card.subtitulo( :key="encabezado.id" :name="encabezado.nombreCurso")  
 </template>
 
 <script>
 import card from '@/components/card.vue';
+
 export default {
   name: "Home",
   components: { "r-card": card }, 
