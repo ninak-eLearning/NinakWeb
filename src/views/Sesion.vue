@@ -1,5 +1,5 @@
 <template lang="pug">
-    b-container
+    b-container(class="shadow p-3 mb-5 bg-white rounded")
       b-row.titulo(class="text-light p-3 bg-info")
         b-col Ninak
       b-row.curso

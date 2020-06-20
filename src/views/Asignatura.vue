@@ -1,5 +1,5 @@
 <template lang="pug">
-    b-container
+    b-container(class="shadow p-3 mb-5 bg-white rounded")
       b-row.titulo(class="text-light p-3 bg-info")
         b-col Ninak
       b-row.curso
@@ -10,9 +10,9 @@
           strong {{$route.params.id}}
       b-row 
       br
-      b-row(align-v="center")
+      b-row(align-v="center" class="offset-1 col 10")
        router-link( :to= "{ name: 'Sesion' , params: {id:encabezadoS.nombreS}}" v-for="encabezadoS of nombreSesion" :key="encabezadoS.id") 
-         r-card.subtitulo( :key="encabezadoS.id" :name="encabezadoS.nombreS") 
+         r-card.subtitulo(class="shadow p-3 mb-5 bg-white rounded" :key="encabezadoS.id" :name="encabezadoS.nombreS") 
 
 </template>
 

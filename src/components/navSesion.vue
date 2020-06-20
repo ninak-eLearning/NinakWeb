@@ -1,9 +1,10 @@
 <template lang="pug" >
     <div>
-    <b-card title="Card Title" body-class="text-center" header-tag="nav">
+    <b-card title="Card Title" body-class="text-center" header-tag="nav" >
         <template v-slot:header>
         <b-nav card-header tabs>
-            <b-nav-item active>Video</b-nav-item>
+            <b-nav-item active >Video</b-nav-item>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cTQiN9dewIg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <b-nav-item >Prueba</b-nav-item>
             <b-nav-item >Actividades Grupales</b-nav-item>
         </b-nav>
