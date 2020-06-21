@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # nanix
 
 ## Project setup
@@ -22,3 +23,8 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# HuqariqWeb
+
+Web application for labeling and recording of Quechua audios, as part of the project e-Quechua. See https://siminchikkunarayku.pe
+>>>>>>> other/master
