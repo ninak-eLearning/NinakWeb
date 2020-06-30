@@ -1,35 +1,33 @@
 <template lang="pug">
-  b-container(class="contAsig p-3 mb-5 bg-white")
-    r-navbar
-
+  b-container(class="shadow p-3 mb-5 bg-white rounded")
+    b-row.titulo(class="text-light p-3 bg-info")
+      b-col Ninak
+    b-row.curso
+      b-col(col-sm="2") 
+        strong Asignatura     
+      b-col.curso(col-sm="10") 
     b-row.subtitulo
-      b-col(class="marcoTitulo" align-v="center") Asignaturas
+      b-col 
+        strong Asignaturas
     b-row 
     br
-    div(class="card-deck offset-12 col 10")
-     
+    b-row(align-v="center" class="offset-1 col 10")
      router-link( :to= "{ name: 'Asignatura' , params: {id:encabezado.nombreCurso}}" v-for="encabezado of nombreAsignatura" :key="encabezado.id") 
- 
       r-card(class="shadow p-3 mb-5 bg-white rounded" :key="encabezado.id" :name="encabezado.nombreCurso")  
 </template>
 
 <script>
 import card from '@/components/card.vue';
-import navbar from '@/components/navbar.vue';
 
 export default {
   name: "Home",
-  components: { 
-    "r-card": card,
-    "r-navbar": navbar,
-  }, 
+  components: { "r-card": card }, 
   mounted() {
       this.fetchData();
   },
   data(){
     return{
-      nombreAsignatura: [],
-      event_at: '',
+      nombreAsignatura: []
     };
   },
   methods: {
@@ -38,7 +36,7 @@ export default {
         const val = await res.json();
         this.nombreAsignatura = val;
         console.log(val);
-    },
+    }
   }
 };
 </script>
