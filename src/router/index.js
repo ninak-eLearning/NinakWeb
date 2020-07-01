@@ -6,19 +6,31 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
+    path: "/home",
     name: "Home",
     component: Home
   },
   {
-    path: "/:id",
+    path: "/a:id",
     name: "Asignatura",
     component: () => import(/* webpackChunkName: "Asignatura" */ "../views/Asignatura.vue")
   },
   {
-    path: "/asignatura/:id",
+    path: "/asignatura/sesion/:id",
     name: "Sesion",
     component: () => import(/* webpackChunkName: "Sesion" */ "../views/Sesion.vue")
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: () =>
+      import(/* webpackChunkName: "login" */ "../views/Login.vue")
+  },
+  {
+    path: "/signup",
+    name: "Sign Up",
+    component: () =>
+      import(/* webpackChunkName: "login" */ "../views/SignUp.vue")
   }
 ];
 

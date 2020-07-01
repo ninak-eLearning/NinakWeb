@@ -1,26 +1,26 @@
 <template lang="pug">
-    b-container(class="shadow p-3 mb-5 bg-white rounded")
-      b-row.titulo(class="text-light p-3 bg-info")
-        b-col Ninak
-      b-row.curso
-        b-col(col-sm="2") Asignatura     
-        b-col.curso(col-sm="10") 
+    
+    b-container(class=" p-3 mb-5 bg-white")
+      r-navbar
+ 
       b-row.subtitulo
-        b-col 
-          strong {{$route.params.id}}
+        b-col(class="marcoTitulo" align-v="center")  {{$route.params.id}}
       b-row 
       br
-      b-row(align-v="center" class="offset-1 col 10")
+      div(class="card-deck offset-12 col 10")
        router-link( :to= "{ name: 'Sesion' , params: {id:encabezadoS.nombreS}}" v-for="encabezadoS of nombreSesion" :key="encabezadoS.id") 
-         r-card.subtitulo(class="shadow p-3 mb-5 bg-white rounded" :key="encabezadoS.id" :name="encabezadoS.nombreS") 
+         r-card.subtitulo(class="shadow mb-5 bg-white" :key="encabezadoS.id" :name="encabezadoS.nombreS") 
 
 </template>
 
 <script>
 import card from '@/components/card.vue';
+import navbar from '@/components/navbar.vue';
 export default {
   name: "Asignatura",
-  components: { "r-card": card }, 
+  components: { 
+    "r-card": card,
+    "r-navbar": navbar }, 
   mounted() {
       this.fetchData();
   },
