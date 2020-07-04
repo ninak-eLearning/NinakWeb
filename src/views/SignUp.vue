@@ -9,7 +9,7 @@
       <div class="educatorAuth">
         <nav class="navbar">
           <div class="navbar__left">
-            <img class="navbar__logo" src="../assets/ninak_logo.jpg" alt="">
+            <img class="navbar__logo" src="../assets/ninak_logo.png" alt="">
           </div>
           <div class="navbar__right">
 

@@ -27,7 +27,6 @@ export default {
   data(){
     return{
       nombreAsignatura: [],
-      event_at: '',
     };
   },
   methods: {

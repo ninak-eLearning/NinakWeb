@@ -2,7 +2,7 @@
     <div>
     <nav class="navbarSesion">
           <div class="navbar__left">
-            <img class="navbar__logo" src="../assets/ninak_logo.jpg" alt="">
+            <img class="navbar__logo" src="../assets/ninak_logo.png" alt="">
           </div>
           <div class="navbar__right">
            <!-- <button type="button" class="button -link -hideMedium" data-testid="navbar__button__flipCode" aria-label="Ingrese un Flip Code para unirse a su discusión.">
