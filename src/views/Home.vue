@@ -52,6 +52,8 @@ export default {
     align-items: center;
   }
   .subtitulo{
+    display: flex;
+    justify-content: center;
     border: 1px solid rgb(221, 221, 221);
     min-height: 2rem;
     align-items: center;

@@ -25,11 +25,11 @@ body {
 .navbar__logo {
   
   width: 20%;
-  align-items: left;
   align-content: left;
   display: flex;
-  position: relative;
+  
   /*
+  position: relative;
   padding: 1rem;
   ;*/
 }
@@ -45,7 +45,6 @@ body {
 }
 .padre {
     /*
-    justify-content: center;
     flex-direction: column; */
     /*IMPORTANTE*/
     display: flex;
@@ -378,6 +377,8 @@ p {
   min-width: 18rem;
   border-radius: 40px;
   overflow: hidden;
+  float: none;
+  margin-bottom: 10px;
 }
 
 .card-deck {
@@ -392,8 +393,8 @@ p {
 }
 
 .container {
-  display: grid;
   align-items: center;
   justify-content: center;
+  background: black;
  
 }

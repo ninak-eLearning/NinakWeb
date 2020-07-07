@@ -127,7 +127,7 @@
                   <font style="vertical-align: inherit;"></font></p>
                   <a href="/educator" class="button -link signUpTab__backToSignInLink" data-testid="signUpTab__link__backToSignIn">
                   <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                     <router-link to="login"><strong>¿Ya tienes una cuenta?</strong></router-link>
+                     <router-link to="/"><strong>¿Ya tienes una cuenta?</strong></router-link>
                     </font></font></a>
  
             </div>
