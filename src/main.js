@@ -10,13 +10,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import "./assets/css/main.css"
 //import "@/assets/css/fonts.css"
-
-/*import VueAxios from 'vue-axios'
-
-Vue.use(VueAxios,axios);
-
-
-axios.defaults.baseURL = 'http://localhost:3000/api';*/
+ 
 Vue.use(BootstrapVue);
 Vue.config.productionTip = false;
 

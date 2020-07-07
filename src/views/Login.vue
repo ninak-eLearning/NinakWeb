@@ -138,7 +138,7 @@ export default {
       })  
     },
     validarEmail(){
-        //if(response.)
+        //if(response.data.id==0){ }
     }
   }
 }
