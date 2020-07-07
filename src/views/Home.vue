@@ -1,7 +1,6 @@
 <template lang="pug">
   b-container(class="container")
     r-navbar
-
     b-row.subtitulo
       b-col(class="marcoTitulo" align-v="center") Asignaturas
     b-row 

@@ -34,7 +34,7 @@
             <div class="signUpTab" >
               <h1>
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;"><strong>LOGIN</strong></font>
+                  <font style="vertical-align: inherit;" class="login"><strong>LOGIN...</strong></font>
                 </font>
               </h1>
               <p class="signUpTab__studentWarning">
@@ -105,18 +105,17 @@
 
 
 <script>
-
+import axios from "axios"
 export default {
   name: 'Login',
  
   data(){
     return {
-      
       form:{
       email: '',
       password: '',
       },
-      usuarios: [],
+      users:[]
     };
   },
   methods: {
@@ -125,31 +124,23 @@ export default {
       console.log(this.form.email)
       console.log(this.form.password)  
        
-      this.axios.get('https://reqres.in/api/users',{
-        params:{
-            'per_page': 12
-        }
-
-      }).then(response => {
-        console.log(response.data)
-        this.usuarios = response.data.data;
+      axios.post("http://3.19.185.86:9566/login",{
+        username:'this.form.email',
+        password:'this.form.password'
+      })
+      .then(response => {
+        console.log(response)
+        console.log(response.data.id)
         /*loginObj.output = response.data;*/
-        console.log(this.usuarios[7].email)
       })
       .catch(e => {
         console.log(e)
       })  
-
     },
-    
- 
-
- 
+    validarEmail(){
+        //if(response.)
+    }
   }
-   
-
-  
 }
- 
 
 </script>
