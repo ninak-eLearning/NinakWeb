@@ -24,12 +24,12 @@ body {
 
 .navbar__logo {
   
-  width: 15%;
-  align-items: left;
+  width: 20%;
   align-content: left;
   display: flex;
-  position: relative;
+  
   /*
+  position: relative;
   padding: 1rem;
   ;*/
 }
@@ -45,7 +45,6 @@ body {
 }
 .padre {
     /*
-    justify-content: center;
     flex-direction: column; */
     /*IMPORTANTE*/
     display: flex;
@@ -148,7 +147,7 @@ display: block;
 margin:auto;
 border: #554a5f;
 cursor: pointer;
-background-color: #811ad6;
+background-color: #90CA55;
 border-radius: 28px;
 height: 2.5rem;
 font-weight: 900;
@@ -204,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 100vh;
     font-family: inherit;
     width: 100%;
-    background: linear-gradient(135deg,#66cfff,#8303bc);
+    background: linear-gradient(135deg,#ffffff,#02a7f3);
     flex-flow: column nowrap;
 }
 
@@ -219,6 +218,9 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.login{
+  color:#543185;
+}
 .signUpTab__studentWarning2 {
   width: 100%;
   padding: .5rem;
@@ -274,7 +276,7 @@ div {
 
     padding: .5rem 1rem;
     font-size: .9rem;
-    color: #fff;
+    color: #044d7a;
     text-decoration: none;
     border-radius: 8px;
 }
@@ -375,6 +377,8 @@ p {
   min-width: 18rem;
   border-radius: 40px;
   overflow: hidden;
+  float: none;
+  margin-bottom: 10px;
 }
 
 .card-deck {
@@ -389,8 +393,8 @@ p {
 }
 
 .container {
-  display: grid;
   align-items: center;
   justify-content: center;
+  background: black;
  
 }

@@ -1,38 +1,38 @@
 [
     {
-        "nombreCurso": "Asignatura 1",
+        "nombreCurso": "Personal Social",
         "id": 1
     },
     {
-        "nombreCurso": "Asignatura 2",
+        "nombreCurso": "Matemática",
         "id": 2
     },
     {
-        "nombreCurso": "Asignatura 3",
+        "nombreCurso": "Comunicación",
         "id": 3
     },
     {
-        "nombreCurso": "Asignatura 4",
+        "nombreCurso": "Ciencia y Ambiente",
         "id": 4
     },
     {
-        "nombreCurso": "Asignatura 5",
+        "nombreCurso": "Inglés",
         "id": 5
     },
     {
-        "nombreCurso": "Asignatura 6",
+        "nombreCurso": "Pensamiento Crítico",
         "id": 6
     },
     {
-        "nombreCurso": "Asignatura 7",
+        "nombreCurso": "Razonamiento Matemático",
         "id": 7
     },
     {
-        "nombreCurso": "Asignatura 8",
+        "nombreCurso": "Razonamiento Verbal",
         "id": 8
     },
     {
-        "nombreCurso": "Asignatura 9",
+        "nombreCurso": "Razonamiento Matemática",
         "id": 9
     } 
 ]
